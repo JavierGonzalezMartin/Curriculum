@@ -1,50 +1,62 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: hsl(206, 37%, 93%);
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #333;
+  background-color: hsl(206, 19%, 34%);
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 #contenedor {
-  display:grid;
-   
+  position: absolute;
+  padding: 10px ;  
+}
+
+#cabecera {
+  position: relative;
+  padding: 10px;
+}
+
+#menu {
+  position: absolute;
+  left: 200px;
+  top: 20px;
+  display: flex;
+}
+
+#foto-perfil {
+  top: 10px;
+  padding: 10px;
 }
 
 #foto-perfil img {
-  flex: 2;
-  padding: 20px;
-  display: block;
   height: 120px;
   width: 100px ;
-  border-radius: 50%;Ç
+  border-radius: 50%;
 }
 
 #opciones {
-  flex: 1;
-  background-color: #f2f2f2;
+  background-color: hsl(206, 19%, 34%);
+
   text-align: center;
   padding: 10px;
-  display: inline;
+  display:block;
 }
 
 #opciones a {
   text-decoration: none;
-  color: #0e0d0d;
+  color: #fff;
   padding: 10px 20px;
   display:inline-flex;
 }
 
 #opciones a:hover {
-  background-color: #ddd;
+  background-color: #6d7175;
 }
 
-#principal {
-  flex: 1;
-  padding: 20px;
-}
+
