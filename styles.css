@@ -12,22 +12,15 @@ header {
   padding: 10px;
 }
 
+#cabecera {
+  position: relative;
+  padding: 10px;
+}
 #contenedor {
   position: absolute;
   padding: 10px ;  
 }
 
-#cabecera {
-  position: relative;
-  padding: 10px;
-}
-
-#menu {
-  position: absolute;
-  left: 200px;
-  top: 20px;
-  display: flex;
-}
 
 #foto-perfil {
   top: 10px;
@@ -40,23 +33,33 @@ header {
   border-radius: 50%;
 }
 
+
+#menu {
+  left: 200px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
 #opciones {
   background-color: hsl(206, 19%, 34%);
-
   text-align: center;
   padding: 10px;
-  display:block;
+  display:inline-flex;
 }
 
 #opciones a {
   text-decoration: none;
   color: #fff;
   padding: 10px 20px;
-  display:inline-flex;
 }
 
 #opciones a:hover {
   background-color: #6d7175;
 }
 
-
+@media (max-width: 450px) {
+  #opciones{
+    flex-direction: column;
+   }
+ }
