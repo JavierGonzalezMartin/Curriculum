@@ -1,65 +1,221 @@
+*, *:before,*:after{
+ margin: 0;
+ padding: 0;
+ outline: 0;
+ box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: hsl(206, 37%, 93%);
+  font-family: 'open-sans',Arial, Helvetica, sans-serif;
+  background: color #f4f4f4;;
   margin: 0;
   padding: 0;
 }
 
-header {
-  background-color: hsl(206, 19%, 34%);
+.menu {
+  background-color:rgba(40, 70, 99, 0.753);
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+}
+
+.logo{
   color: #fff;
-  text-align: center;
-  padding: 10px;
+  font-size: 35px;
+  padding: 0 80px;
+  font-weight: bold;
+ }
+
+.menu-items {
+  display:inline-flex;
+  list-style: none;
+  margin-right: 30px;
 }
 
-#cabecera {
-  position: relative;
-  padding: 10px;
+.menu-items li {
+  border-radius: 3px;
+  margin: 5px;
+  padding: 10px 5px;
 }
-#contenedor {
-  position: absolute;
+
+.menu-items li a {
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.menu-items li:hover, li.active {
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: .4s;
+}
+
+.menu-btn{
+ margin-right: 30px;
+ font-size: 25px;
+ color: #fff;
+ cursor: pointer;
+ display: none;
+}
+
+.menu-items.showmenu{
+  top: 65px;
+ }
+
+.perfil {
   padding: 10px ;  
+  display: flex;
 }
 
-
-#foto-perfil {
+#perfil-foto {
   top: 10px;
   padding: 10px;
 }
 
-#foto-perfil img {
-  height: 120px;
-  width: 100px ;
+#perfil-datos {
+  top: 10px;
+  padding: 30px;
+}
+
+#perfil-email {
+  display: inline-flex;
+  align-items: center;
+}
+
+#email-contactos{
+  margin: 0 0 0 10px;
+}
+
+#emailabrir{
+  cursor: pointer;
+  font-size: 20px;
+  width: 30px;
+  border: 0;
+  background-color:rgba(40, 70, 99, 0.1);
+}
+
+#emailcopy{
+  cursor: pointer;
+  font-size: 20px;
+  width: 30px;
+  border: 0;
+  background-color:rgba(40, 70, 99, 0.1);
+}
+
+
+#linkedin{
+  cursor: pointer;
+  font-size: 20px;
+  width: 30px;
+  border: 0;
+  background-color:rgba(40, 70, 99, 0.1);
+}
+
+#perfil-foto img {
+  height: 180px;
+  width: 140px ;
   border-radius: 50%;
 }
 
-
-#menu {
-  left: 200px;
-  top: 20px;
-  display: flex;
-  justify-content: center;
+.contenedor {
+  padding: 10px ;  
+  margin-left: 5px;
 }
 
-#opciones {
-  background-color: hsl(206, 19%, 34%);
-  text-align: center;
-  padding: 10px;
-  display:inline-flex;
+#sobremi-texto{
+  padding: 10px ;  
 }
 
-#opciones a {
-  text-decoration: none;
-  color: #fff;
-  padding: 10px 20px;
+#titulos{
+  padding: 10px ;  
+  margin-left: 20px;
 }
 
-#opciones a:hover {
-  background-color: #6d7175;
+.pie{
+  padding: 10px ;  
+  margin-left: 5px;
 }
 
-@media (max-width: 450px) {
-  #opciones{
-    flex-direction: column;
+@media screen and  (max-width: 952px) {
+  .logo{
+    font-size: 30px;
+    padding-left: 35px;
+  }
+  .menu-items li a {
+    font-size: 16px;
    }
  }
+
+@media screen and  (max-width: 758px) {
+  .menu{
+    height: 65px;
+    background: #fff;
+  }
+  .menu-btn{
+      display: inline-flex;
+      color: #0a0a0a;
+  }
+  .menu-items{
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    background: #fff;
+    top: -100vh;
+    text-align: center;
+    transition: all .4s;
+    flex-direction: column;
+  }
+  .menu-items li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  .menu-items li:hover {
+    background-color: none;
+  }
+  .menu-items li a {
+    font-size: 20px;
+    color: #0a0a0a;
+    font-weight: bold;
+  }
+  .menu-items li a:hover {
+    color: #e9183b 
+    }
+  .logo{
+   font-size: 25px;
+   color:rgba(40, 70, 99, 0.753);
+   padding-left: 35px;  
+  }
+ }
+
+@media screen and  (max-width: 600px) {
+  .perfil {
+    padding: 10px ;  
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #perfil-foto {
+    top: 10px;
+    padding: 10px;
+  }
+  
+  #perfil-contacto {
+    top: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+@media screen and  (max-width: 758px) and (orientation: landscape)  {
+  .menu-items li {
+    margin: 5px 0 0 0;
+  }
+  .menu-items  {
+    overflow: scroll;
+    height: calc(100% -  65px);
+  }
+}

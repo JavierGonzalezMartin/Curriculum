@@ -4,80 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículum</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth@75..100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0e770521bf.js" crossorigin="anonymous"></script>   <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-<header>
-    <h1>Mi Currículum</h1>
-</header>
-<div id="cabecera">
-    <div id="menu">
-        <nav id="opciones">
-            <a href="">Perfil</a>
-            <a href="">Experiencia Laboral</a>
-            <a href="">Formación académica</a>
-            <a href="">Cursos</a>
-            <a href="">Habilidades</a>
-            <a href="">Contacto</a>
-        </nav>
-    </div>
-    </div>
-<div id="contenedor">
-        <div id="contenido">
-        <div id="foto-perfil">
+<div class="menu">
+    <label class="logo">CURRICULUM</label>
+    <nav class="menu-items" id="navitems" >
+        <li class="active"><a href="index.html">Perfil</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="cursos.html">Cursos</a></li>
+        <li><a href="habilidades.html">Habilidades</a></li>
+    </nav>
+    <span class="menu-btn" id="navbtn">
+       <i class="fa-solid fa-bars"></i>
+    </span>
+</div>
+<div class="contenedor">
+    <div class="perfil" >
+        <div id="perfil-foto">
             <img src="img/Foto.jpg" alt="Tu Foto">
         </div>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>E-mail: jgm_desarrollo@hotmail.com.</p>
-        </section>
-        <section id="perfil">
-            <h1>Perfil</h1>
-            <p>Apasionado programador con una sólida formación en desarrollo de software y experiencia en el diseño y creación de aplicaciones innovadoras.<br>Siempre en busca de nuevas oportunidades para aprender y crecer profesionalmente.</p>
-            <p></p>
-        </section>
-
-        <section id="experiencia">
-            <h1>Experiencia Laboral</h1>
-            <h2>Desarrollador de Software Senior</h2>
-            <p>Empresa Unicom Software S.L., Almeria, Período: 20/01/2004 - Actualmente</p>
-            <ul>
-                <li>Lidero el desarrollo, mantenimiento  y lanzamiento de mejoras de una aplicación ERP de Transporte de mercancías por carretera</li>
-                <li>Desarrollo y mantengo el sistemas de gestión de bases de datos SQL Server, mejorando la velocidad y la eficiencia del acceso a la información crítica</li>
-                <li>Colaboré estrechamente con el equipo de diseño para garantizar una interfaz de usuario intuitiva y atractiva que mejorara la experiencia del usuario final</li>
-            </ul>
-        </section>
-
-        <section id="formacion">
-            <h1>Formación académica</h1>
-            <ul>
-                <li>Ingeniero ténico agricola-Universidad de almería</li>
-                <li>Técnico superior en desarrollo de aplicaciones informáticas-IES Al-Andalus</li>
-            </ul>
-            <h></h>
-            <h></h>
-        </section>
-
-        <section id="cursos">
-            <h1>Cursos</h1>
-            <ul>
-                <li>Curso 1</li>
-                <li>Curso 1</li>
-            </ul>
-        </section>
-
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Experto en múltiples lenguajes de programación</li>
-                <li>Habilidad en resolución de problemas.</li>
-                <li>Comunicación efectiva y trabajo en equipo.</li>
-            </ul>
-        </section>
-
-    </div> 
-    <div id="pie">(c) JGM </div> 
+        <div id="perfil-datos" >
+            <p>Nombre: JAVIER GONZALEZ MARTIN</p>
+            <p>Nacionalidad: Española</p>
+            <p>Edad: 47 años</p>
+            <div id="perfil-email" >
+                <p id="emailvalor" >jgm_desarrollo@hotmail.com</p> 
+                <div id="email-contactos" >
+                     <button id="emailabrir">
+                       <i class="fa-solid fa-envelope"></i>
+                     </button>
+                    <button id="emailcopy">
+                       <i class="fa-solid fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="perfil-linkedin" >
+                <button id="linkedin">
+                   <i class="fa-brands fa-linkedin"></i>
+                </button>
+                <label >Linkedin</label>
+            </div>
+        </div>
+ </div> 
+    <div class="sobremi">
+        <h1>Sobre mi</h1>
+        <div id="sobremi-texto">
+           <p>Apasionado programador con una sólida formación en desarrollo de software</p> 
+           <p>Experiencia en el diseño y creación de aplicaciones innovadoras.</p>
+           <p>Siempre en busca de nuevas oportunidades para aprender y crecer profesionalmente.</p>
+        </div>
+   </div>
+    <div class="academica" >
+        <h1>Formación académica</h1>
+        <div id="titulos" >
+           <ul>
+             <li>Ingeniero ténico agricola-Universidad de almería</li>
+             <li>Técnico superior en desarrollo de aplicaciones informáticas-IES Al-Andalus de almería</li>
+            </div>
+        </ul>
+    </div>
 </div>
-
+<div class="pie">(c) JGM</div> 
+</div>
 </body>
 </html>
