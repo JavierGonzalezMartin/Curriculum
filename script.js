@@ -13,7 +13,7 @@ addEventListener('DOMContentLoaded',()=>{
 const cerrar = document.querySelector('#cerrarbtn');
 if (cerrar){
   cerrar.addEventListener('click', ()=>{
-    window.location.href = "about:blank"; 
+    window.location.href = "http://www.google.com/"; 
   })
 }
 
