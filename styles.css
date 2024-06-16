@@ -75,7 +75,7 @@ body {
  }
 
 .contenedor {
-  padding: 10px ;  
+  padding: 5px ;  
   margin-left: 5px;
 }
 
@@ -161,6 +161,79 @@ body {
   margin-left: 40px;
 }
 
+.curso {
+  padding: 1rem;
+  max-width: 1000px;
+  max-height: 250px;
+  margin: 4px;
+  border: 3px solid;
+  border-color: rgb(32, 57, 80);
+  background-color:rgba(40, 70, 99, 0.753);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, .7);
+  text-align: center;
+}
+
+.curso-duracion {
+  font-size: .7em;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.curso-titulo {
+  font-size: 1.5em;
+  color: #fff;
+  margin: 10px;
+}
+
+.curso-impartido {
+  font-size: .7em;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.btn-contenido {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(40, 70, 99, 1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.4s;
+  text-decoration: none; /* Para eliminar el subrayado en enlaces */
+}
+
+.btn-contenido i {
+  margin-right: 8px;
+}
+
+.btn-contenidon:hover {
+  background-color: rgb(22, 120, 190);
+  transform: scale(1.5);
+}
+
+.btn-contenido:active {
+  background-color: rgb(22, 120, 190);
+  transform: scale(1);
+}
+
+@supports (display: grid) {
+  .cursos {
+      display: grid;
+      grid-gap: 0;
+      justify-content: center;
+      
+      grid: auto-flow dense;
+      grid-auto-flow: row dense;
+      grid-auto-rows: minmax(150px, auto);
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
 .pie{
   padding: 10px ;  
   margin-left: 5px;
@@ -225,8 +298,26 @@ body {
    color: #fff;
    padding-left: 35px;  
   }
+ 
+  .curso {
+    border-color: #940a21;
+    background-color: #e9183b;
+  }   
 
-  .pie{
+  .btn-contenido {
+    background-color: #770d1f;
+  }
+  
+  
+  .btn-contenidon:hover {
+    background-color: #c00524;
+  }
+  
+  .btn-contenido:active {
+    background-color: #c00524;
+  }
+
+ .pie{
     padding: 10px ;  
     margin-left: 5px;
     color: #fff;
