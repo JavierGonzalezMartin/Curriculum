@@ -236,7 +236,6 @@ body {
 
 .pie{
   padding: 10px ;  
-  margin-left: 5px;
   color: #fff;
   background-color:rgba(40, 70, 99, 0.753);
 }
@@ -319,7 +318,6 @@ body {
 
  .pie{
     padding: 10px ;  
-    margin-left: 5px;
     color: #fff;
     background-color:#e9183b 
   }  
