@@ -1,21 +1,19 @@
 addEventListener('DOMContentLoaded',()=>{
- const menu_btn = document.querySelector('#burgerbtn');
- if (menu_btn){
+  const menu_btn = document.querySelector('#burgerbtn');
+  if (menu_btn){
      menu_btn.addEventListener('click', ()=>{
         const menu_items = document.querySelector('#navitems');
             menu_items.classList.toggle('showmenu');
         })
-    }
   }
-)
 
-
-const cerrar = document.querySelector('#cerrarbtn');
-if (cerrar){
-  cerrar.addEventListener('click', ()=>{
-    window.location.href = "http://www.google.com/"; 
-  })
-}
+  const cerrar = document.querySelector('#cerrarbtn');
+  if (cerrar){
+    cerrar.addEventListener('click', ()=>{
+      window.location.href = "http://www.google.com/"; 
+    })
+  }
+})
 
 let textoemail = document.getElementById('emailvalor').innerHTML;
 const CopiarEmail = async () => {
@@ -26,4 +24,5 @@ const CopiarEmail = async () => {
     console.error('Error al copiar: ', err);
   }
 }
+
 

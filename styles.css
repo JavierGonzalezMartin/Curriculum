@@ -234,6 +234,40 @@ body {
   }
 }
 
+.Tecnología-cuadros{
+  padding: 10px ;  
+  margin-left: 20px;
+  display:inline-flex ;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+thead th {
+    background-color: rgba(40, 70, 99, 0.753);
+    color: #ffffff;
+    text-transform: uppercase;
+}
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tbody tr:hover {
+    background-color: #e9ecef;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
 .pie{
   padding: 10px ;  
   color: #fff;
@@ -315,6 +349,12 @@ body {
   .btn-contenido:active {
     background-color: #c00524;
   }
+
+  thead th {
+    background-color:#e9183b;
+    color: #ffffff;
+    text-transform: uppercase;
+} 
 
  .pie{
     padding: 10px ;  
