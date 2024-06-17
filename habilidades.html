@@ -14,8 +14,7 @@
 <div class="menu">
     <label class="logo">CURRICULUM</label>
     <nav class="menu-items" id="navitems" >
-        <li class="active"><a href="index.html">Inicio</a></li>
-        <li><a href="experiencia.html">Experiencia</a></li>
+        <li class="active"><a href="index.html">Perfil</a></li>
         <li><a href="cursos.html">Cursos</a></li>
         <li><a href="habilidades.html">Habilidades</a></li>
     </nav>
@@ -29,73 +28,90 @@
     </div>
 </div>
 <div class="contenedor" >
+    <h2>Habilidades</h2>
     <div class="habilidades">
-        <h2>Habilidades</h2>
         <div id="habilidades-texto">
             <ul>
-               <li>Experto en múltiples lenguajes de programación.</li>
-               <li>Habilidad en resolución de problemas.</li>
-               <li>Comunicación efectiva y trabajo en equipo.</li>
-               </ul>
+                <li>Conocimiento técnico sólido: Dominio de varios lenguajes de programación.</li>
+                <li>Capacidad para analizar problemas complejos y desarrollar soluciones efectivas y eficientes.</li>
+                <li>Hablidades de depuración y detección de problemas técnicos y bugs.</li>
+                <li>Pensamiento algorítmico.</li>
+                <li>Comunicación clara, efectiva y trabajo en equipo.</li>
+                <li>Alta atención al detalle.</li>
+                <li>Aprendizaje continuo.</li>
+                <li>Máximo compromiso con el trabajo.</li>
+           </ul>
        </div>
-    </div>
-    <div class="tecnología">
-        <h2>Habilidades tecnológicas</h2>
-        <div class="Tecnología-cuadros">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Tecnología</th>
-                        <th>Bajo</th>
-                        <th>Medio</th>
-                        <th>Alto</th>
-                        <th>Muy Alto</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><h3>Clarion</h3></td>
-                        <td><input type="checkbox" name="nivel_bajo" checked readonly></td>
-                        <td><input type="checkbox" name="nivel_medio" checked readonly></td>
-                        <td><input type="checkbox" name="nivel_alto" checked readonly></td>
-                        <td><input type="checkbox" name="nivel_muy_alto" checked readonly></td>
-                    </tr>
-                    <tr>
-                        <td><h3>SQL server</h3></td>
-                        <td><input type="checkbox" name="nivel_bajo" checked readonly></td>
-                        <td><input type="checkbox" name="nivel_medio" checked readonly></td>
-                        <td><input type="checkbox" name="nivel_alto" checked readonly></td>
-                        <td><input type="checkbox" name="nivel_muy_alto" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><h3>API rest/Soap</h3></td>
-                        <td><input type="checkbox" name="nivel_bajo" checked readonly></td>
-                        <td><input type="checkbox" name="nivel_medio" checked readonly></td>
-                        <td><input type="checkbox" name="nivel_alto" readonly></td>
-                        <td><input type="checkbox" name="nivel_muy_alto" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><h3>Visual studio C#</h3></td>
-                        <td><input type="checkbox" name="nivel_bajo" checked readonly></td>
-                        <td><input type="checkbox" name="nivel_medio" checked readonly></td>
-                        <td><input type="checkbox" name="nivel_alto" readonly></td>
-                        <td><input type="checkbox" name="nivel_muy_alto" readonly></td>
-                    </tr>
-                    <tr>
-                        <td><h3>GIT-control</h3></td>
-                        <td><input type="checkbox" name="nivel_bajo" checked readonly></td>
-                        <td><input type="checkbox" name="nivel_medio" checked readonly></td>
-                        <td><input type="checkbox" name="nivel_alto" readonly></td>
-                        <td><input type="checkbox" name="nivel_muy_alto" readonly></td>
-                    </tr>
-                </tbody>
-            </table>
-  
+       <div class="tecnología">
+            <div class="Tecnología-cuadros">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th>Bajo</th>
+                            <th>Medio</th>
+                            <th>Alto</th>
+                            <th>Muy Alto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="img/clarion_logo.png" alt="Clarion" class="tech-img"></td>
+                            <td><i class="fa-regular fa-circle-check" id="check"></i></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/sqlserver_logo.svg" alt="SQL Server" class="tech-img"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/HTML5_logo.svg" alt="HTML" class="tech-img"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/CSS3_logo.svg" alt="CSS" class="tech-img"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/Csharp_logo.svg" alt="C#" class="tech-img"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/restapi-logo.svg" alt="APIRest" class="tech-img"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                            </tr>
+                        <tr>
+                            <td><img src="img/Git_logo.svg" alt="GIT" class="tech-img"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle-check"id="check"></td>
+                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                             <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                            </tr>
+                    </tbody>
+                </table>
+    
+            </div>
         </div>
-    </div>
+   </div>
 </div> 
 <div class="pie">(c) JGM </div> 
 </div>
-
 </body>
 </html>

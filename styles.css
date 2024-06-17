@@ -226,12 +226,16 @@ body {
       display: grid;
       grid-gap: 0;
       justify-content: center;
-      
       grid: auto-flow dense;
       grid-auto-flow: row dense;
       grid-auto-rows: minmax(150px, auto);
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
+}
+
+.habilidades{
+  display: flex;
+  flex-direction: column;
 }
 
 .Tecnología-cuadros{
@@ -247,7 +251,7 @@ table {
     overflow: hidden;
 }
 th, td {
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 thead th {
@@ -267,6 +271,21 @@ input[type="checkbox"] {
     height: 15px;
 }
 
+.tech-img{
+  width: 50px;
+  height: 50px;
+}
+
+#check{
+  color:rgba(40, 70, 99, 0.753);
+  font-weight: bold;
+}
+
+#uncheck{
+  color:rgba(40, 70, 99, 0.753);
+}
+
+
 .pie{
   padding: 10px ;  
   color: #fff;
@@ -281,6 +300,7 @@ input[type="checkbox"] {
   .menu-items li a {
     font-size: 16px;
    }
+ 
  }
 
 @media screen and  (max-width: 758px) {
@@ -339,8 +359,7 @@ input[type="checkbox"] {
   .btn-contenido {
     background-color: #770d1f;
   }
-  
-  
+    
   .btn-contenidon:hover {
     background-color: #c00524;
   }
@@ -353,7 +372,16 @@ input[type="checkbox"] {
     background-color:#e9183b;
     color: #ffffff;
     text-transform: uppercase;
-} 
+  } 
+
+  #check{
+    color:#e9183b;
+    font-weight: bold;
+  }
+  
+  #uncheck{
+    color:#e9183b;
+  }  
 
  .pie{
     padding: 10px ;  
