@@ -103,38 +103,54 @@ body {
   margin: 0 0 0 10px;
 }
 
-#emailabrir{
+#emailabrir  {
   cursor: pointer;
   font-size: 20px;
   width: 30px;
-  border: 0;
   text-decoration:none;
-  color: black;
-  background-color:rgba(40, 70, 99, 0.1);
+  border: none;
+  color: rgba(40, 70, 99, 1);
 }
 
-#emailcopy{
+#emailcopy  {
   cursor: pointer;
   font-size: 20px;
   width: 30px;
-  border: 0;
-  background-color:rgba(40, 70, 99, 0.1);
+  text-decoration:none;
+  border: none;
+  color: rgba(40, 70, 99, 1);
 }
 
-#linkedin{
+#linkedin {
   cursor: pointer;
   font-size: 20px;
-  width: 30px;
-  border: 0;
+  border: none;
   text-decoration:none;
-  color: black;
-  background-color:rgba(40, 70, 99, 0.1);
+  color: rgba(40, 70, 99, 1);
 }
 
 #perfil-foto img {
   height: 180px;
   width: 140px ;
   border-radius: 50%;
+}
+
+#experiencia-senior
+{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  padding: 5px;
+  text-shadow: 4px 4px 4px rgb(42, 43, 44, 0.5);
+}
+
+#experiencia-empresa
+{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 4px 4px 4px rgb(42, 43, 44, 0.5);
+}
+
+.sobremi{
+  padding-top: 10px ;  
 }
 
 #sobremi-texto{
@@ -237,7 +253,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .Tecnología-cuadros{
   padding: 10px ;  
   display:inline-flex ;
@@ -284,7 +299,6 @@ input[type="checkbox"] {
 #uncheck{
   color:rgba(40, 70, 99, 0.753);
 }
-
 
 .pie{
   padding: 10px ;  
