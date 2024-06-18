@@ -318,10 +318,8 @@ input[type="checkbox"] {
 }
 
 embed {
-  width: 100%;
+  width: calc(100% -  50px);
   height: 100%;
-  margin-right: 50px;
-  margin-left: 50px;
   border: none;
 }
 
@@ -426,14 +424,16 @@ embed {
     flex-direction: column;
   }
   
+  embed {
+    width: calc(100% -  10px);
+    height: 100%;
+    border: none;
+  }
+  
+
   .pdf-cerrar{
     border-top: 10px;
-    margin: 0px;
-  }
-
-  embed {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 10px;
   }
 
  .pie{
