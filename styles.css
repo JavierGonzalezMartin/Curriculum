@@ -427,11 +427,13 @@ embed {
   }
   
   .pdf-cerrar{
-    margin: 5px;
+    border-top: 10px;
+    margin: 0px;
   }
+
   embed {
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
  .pie{
