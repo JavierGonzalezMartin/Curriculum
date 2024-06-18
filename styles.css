@@ -270,7 +270,7 @@ th, td {
     text-align: center;
 }
 thead th {
-    background-color: rgba(40, 70, 99, 0.753);
+    background-color: rgba(82, 120, 190, 0.753);
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -383,18 +383,18 @@ input[type="checkbox"] {
   }
 
   thead th {
-    background-color:#e9183b;
+    background-color: #f5514c;
     color: #ffffff;
     text-transform: uppercase;
   } 
 
   #check{
-    color:#e9183b;
+    color:#f5514c;
     font-weight: bold;
   }
   
   #uncheck{
-    color:#e9183b;
+    color:#f5514c;
   }  
 
  .pie{
