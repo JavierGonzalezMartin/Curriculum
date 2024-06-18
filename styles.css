@@ -422,19 +422,14 @@ embed {
   }  
 
   .pdf-container {
-    height: 400px;
-  }
-  
-  .pdf-cerrar{
-    margin-right: 5px;
-    margin-left: 5px;
+    height: 600px;
+    flex-direction: column;
   }
   
   embed {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
   }
-
 
  .pie{
     padding: 10px ;  
