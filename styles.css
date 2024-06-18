@@ -184,7 +184,7 @@ body {
   margin: 4px;
   border: 3px solid;
   border-color: rgb(32, 57, 80);
-  background-color:rgba(40, 70, 99, 0.753);
+  background-color:rgba(82, 120, 190, 0.753);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, .7);
   text-align: center;
 }
@@ -367,7 +367,7 @@ input[type="checkbox"] {
  
   .curso {
     border-color: #940a21;
-    background-color: #e9183b;
+    background-color: #f5514c;
   }   
 
   .btn-contenido {
