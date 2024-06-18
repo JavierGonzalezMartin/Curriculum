@@ -317,7 +317,7 @@ input[type="checkbox"] {
   margin-left: 20px;
 }
 
-iframe {
+embed {
   width: 100%;
   height: 100%;
   margin-right: 50px;
@@ -420,6 +420,21 @@ iframe {
   #uncheck{
     color:#f5514c;
   }  
+
+  .pdf-container {
+    height: 400px;
+  }
+  
+  .pdf-cerrar{
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  embed {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
 
  .pie{
     padding: 10px ;  
