@@ -12,6 +12,13 @@ addEventListener('DOMContentLoaded', () => {
     if (cerrar && menu_items) {
         cerrar.addEventListener('click', () => {
             menu_items.classList.remove('showmenu');
+        });
+    }
+
+    const tab_cerrar = document.querySelector('#tabcerrarbtn');
+    if (tab_cerrar) {
+        tab_cerrar.addEventListener('click', (e) => {
+            e.preventDefault();
             window.close();
         });
     }

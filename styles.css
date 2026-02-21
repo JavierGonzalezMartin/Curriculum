@@ -584,7 +584,7 @@ tbody td {
   }
 
   .menu-cerrar {
-    display: inline-block;
+    display: none;
   }
 
   .menu-items {
@@ -598,10 +598,42 @@ tbody td {
     padding: 100px 40px;
     transition: 0.4s ease;
     box-shadow: -10px 0 30px rgba(0, 0, 0, 0.2);
+    display: flex;
   }
 
   .menu-items.showmenu {
     right: 0;
+  }
+
+  .menu-items.showmenu~.menu-btn .menu-burger {
+    display: none;
+  }
+
+  .menu-items.showmenu~.menu-btn .menu-cerrar {
+    display: inline-block;
+    position: fixed;
+    top: 25px;
+    right: 30px;
+    z-index: 1001;
+  }
+
+  .menu-exit {
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+  }
+
+  .menu-exit a {
+    color: #f1f5f9 !important;
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    opacity: 0.9;
+  }
+
+  .menu-exit a:hover {
+    color: #ff4d4d !important;
+    opacity: 1;
   }
 
   .menu-items li a {
@@ -611,6 +643,7 @@ tbody td {
 
   .perfil {
     flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 30px;
   }
@@ -619,8 +652,21 @@ tbody td {
     grid-template-columns: 1fr;
   }
 
-  #perfil-email {
+  #perfil-datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  #perfil-email,
+  #perfil-linkedin {
     justify-content: center;
+    width: 100%;
+  }
+
+  #perfil-linkedin p {
+    margin-bottom: 0;
   }
 }
 
