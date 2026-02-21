@@ -22,11 +22,27 @@ addEventListener('DOMContentLoaded', () => {
             try {
                 await navigator.clipboard.writeText(textoemail);
                 console.log('Contenido copiado al portapapeles: ' + textoemail);
-                // Optional: add a visual feedback here
             } catch (err) {
                 console.error('Error al copiar: ', err);
             }
         };
+    }
+
+    // Actualización automática de la duración de la experiencia
+    const durationElement = document.getElementById('experiencia-duracion');
+    if (durationElement) {
+        const startDate = new Date(2004, 0, 20); // 20 de enero de 2004
+        const today = new Date();
+
+        let years = today.getFullYear() - startDate.getFullYear();
+        let months = today.getMonth() - startDate.getMonth();
+
+        if (months < 0 || (months === 0 && today.getDate() < startDate.getDate())) {
+            years--;
+            months += 12;
+        }
+
+        durationElement.innerText = `Período: 20/01/2004 - Actualmente (${years} años y ${months} meses)`;
     }
 });
 

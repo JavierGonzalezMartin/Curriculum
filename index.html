@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,116 +8,131 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth@75..100&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0e770521bf.js" crossorigin="anonymous"></script>   <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0e770521bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-<div class="menu">
-    <label class="logo">CURRICULUM</label>
-    <nav class="menu-items" id="navitems" >
-        <li class="active"><a href="index.html">Perfil</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="habilidades.html">Habilidades</a></li>
-    </nav>
-    <div class="menu-btn">
-        <button class="menu-burger" id="burgerbtn" aria-label="Abrir menú">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <button class="menu-cerrar" id="cerrarbtn" aria-label="Cerrar">
-          <i class="fa-solid fa-x"></i>
-        </button>
-    </div>
-</div>
-<div class="contenedor">
-    <div class="perfil" >
-        <div id="perfil-foto">
-            <img src="img/Foto.jpg" alt="Tu Foto">
+    <div class="menu">
+        <label class="logo">CURRICULUM</label>
+        <nav class="menu-items" id="navitems">
+            <li class="active"><a href="index.html">Perfil</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+        </nav>
+        <div class="menu-btn">
+            <button class="menu-burger" id="burgerbtn" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="menu-cerrar" id="cerrarbtn" aria-label="Cerrar">
+                <i class="fa-solid fa-x"></i>
+            </button>
         </div>
-        <div id="perfil-datos" >
-            <p>Nombre: JAVIER GONZALEZ MARTIN</p>
-            <p>Nacionalidad: Española</p>
-            <p>Fecha nacimiento: 24/01/1977</p>
-            <div id="perfil-email" >
-                <p id="emailvalor">jgm_desarrollo@hotmail.com</p> 
-                <div id="email-contactos" >
-                    <a href="mailto:jgm_desarrollo@hotmail.com" id="emailabrir">
-                       <i class="fa-solid fa-envelope"></i>
+    </div>
+    <div class="contenedor">
+        <div class="perfil">
+            <div id="perfil-foto">
+                <img src="img/Foto.jpg" alt="Tu Foto">
+            </div>
+            <div id="perfil-datos">
+                <p>Nombre: JAVIER GONZALEZ MARTIN</p>
+                <p>Nacionalidad: Española</p>
+                <p>Fecha nacimiento: 24/01/1977</p>
+                <div id="perfil-email">
+                    <p id="emailvalor">jgm_desarrollo@hotmail.com</p>
+                    <div id="email-contactos">
+                        <a href="mailto:jgm_desarrollo@hotmail.com" id="emailabrir">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <button id="emailcopy" onclick="CopiarEmail()">
+                            <i class="fa-solid fa-copy"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="perfil-linkedin">
+                    <a href="http://www.linkedin.com/in/javier-gonzález-martín-0b96b8313" id="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
                     </a>
-                    <button id="emailcopy" onclick="CopiarEmail()">
-                       <i class="fa-solid fa-copy"></i>
-                    </button>
+                    <label>Linkedin</label>
                 </div>
             </div>
-            <div id="perfil-linkedin" >
-                <a href="http://www.linkedin.com/in/javier-gonzález-martín-0b96b8313" id="linkedin">
-                   <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <label >Linkedin</label>
+        </div>
+        <div id="experiencia-senior">
+            <h1>Desarrollador de software senior</h1>
+        </div>
+        <div class="sobremi">
+            <h1>Sobre mí</h1>
+            <div id="sobremi-texto">
+                <p>Apasionado programador con una sólida formación en desarrollo de software.</p>
+                <p>Experiencia en el diseño y creación de aplicaciones innovadoras.</p>
+                <p>Siempre en busca de nuevas oportunidades para aprender y crecer profesionalmente.</p>
             </div>
         </div>
-    </div> 
-    <div id="experiencia-senior">
-       <h1>Desarrollador de software senior</h1>
+        <div class="academica">
+            <h1>Formación académica</h1>
+            <div id="titulos">
+                <ul>
+                    <li>Ingeniero ténico agricola - Universidad de Almería (Junio 2001)</li>
+                    <li>Técnico superior en desarrollo de aplicaciones informáticas - IES Al-Andalus de Almería (Junio
+                        2004)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="experiencia">
+            <h1>Experiencia laboral</h1>
+            <div class="experiencia-laboral">
+                <h3 class="experiencia-empresa">Empresa: Unicom Software S.L., Almeria.</h3><br>
+                <h4 id="experiencia-duracion">Período: 20/01/2004 - Actualmente (20 años y 6 meses)</h4>
+                <h4>Contrato: Indefinido</h4>
+            </div>
+            <div class="experiencia-texto">
+                <ul>
+                    <li>Lidero el desarrollo, mantenimiento y lanzamiento de mejoras de una aplicación ERP de transporte
+                        de mercancías por carretera.</li>
+                    <li>Desarrollo y mantengo el sistemas de gestión de bases de datos SQL Server, mejorando la
+                        velocidad y la eficiencia del acceso a la información crítica.</li>
+                    <li>Colaboro estrechamente con el equipo de diseño para garantizar una interfaz de usuario intuitiva
+                        y atractiva para mejorar la experiencia del usuario final.</li>
+                </ul>
+            </div>
+            <div class="experiencia-laboral">
+                <h3 class="experiencia-empresa">Empresa: Almeria S.C.A.</h3><br>
+                <h4>Período: 19/12/2001 al 26-02-2002 (2 meses)</h4>
+                <h4>Contrato: Prácticas de formación</h4>
+            </div>
+            <div class="experiencia-texto">
+                <ul>
+                    <li>Apoyo para la finalización de un doctorado del personal de la empresa.</li>
+                    <li>Visita a pie de campo de explotaciones de cultivo bajo plástico.</li>
+                    <li>Toma de datos de los parámetros del agua de riego de las distintas explotaciones.</li>
+                    <li>Tratamiento estadístico de datos.</li>
+                    <li>Entrega de información al responsable del doctorado.</li>
+                </ul>
+            </div>
+            <div class="experiencia-laboral">
+                <h3 class="experiencia-empresa">Empresa: Caja Rural de Almería: Estación experimiental las palmerillas.
+                </h3><br>
+                <h4>Período: 09/12/1999 al 08-10-2000 (10 meses)</h4>
+                <h4>Contrato: Beca de investigación</h4>
+            </div>
+            <div class="experiencia-texto">
+                <ul>
+                    <li>Análisis de parámetros bioproductivos y de calidad de ocho cultivares de tomate "en ramillete"
+                        <i>(Lycopersicom esculentum Mill).</i>
+                    </li>
+                    <li>Control de producción (peso total y comercial del ramillete, número de frutos por ramillete).
+                    </li>
+                    <li>Control de calidad del ramillete (uniformidad de los frutos, homogeneidad de coloración,
+                        distribución espacial de los frutos y tipo de ramillete).</li>
+                    <li>Control de calidad de la producción (calibre, pH, ºBrix, acidez, firmeza, intensidad de color,
+                        conservación del fruto a temperatura y humedad ambiente, catface, blotchy, etc.).</li>
+                    <li>Tratamiento estadístico de datos.</li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="sobremi">
-        <h1>Sobre mí</h1>
-        <div id="sobremi-texto">
-           <p>Apasionado programador con una sólida formación en desarrollo de software.</p> 
-           <p>Experiencia en el diseño y creación de aplicaciones innovadoras.</p>
-           <p>Siempre en busca de nuevas oportunidades para aprender y crecer profesionalmente.</p>
-        </div>
-   </div>
-    <div class="academica" >
-        <h1>Formación académica</h1>
-        <div id="titulos" >
-            <ul>
-              <li>Ingeniero ténico agricola - Universidad de Almería (Junio 2001)</li>
-              <li>Técnico superior en desarrollo de aplicaciones informáticas - IES Al-Andalus de Almería (Junio 2004)</li>
-            </ul>
-        </div>
-    </div>
-        <div class="experiencia-laboral">
-            <h3 class="experiencia-empresa" >Empresa: Unicom Software S.L., Almeria.</h3><br>
-            <h4>Período: 20/01/2004 - Actualmente (20 años y 6 meses)</h4>
-            <h4>Contrato: Indefinido</h4>
-        </div>
-        <div class="experiencia-texto">
-            <ul>
-              <li>Lidero el desarrollo, mantenimiento  y lanzamiento de mejoras de una aplicación ERP de transporte de mercancías por carretera.</li>
-              <li>Desarrollo y mantengo el sistemas de gestión de bases de datos SQL Server, mejorando la velocidad y la eficiencia del acceso a la información crítica.</li>
-              <li>Colaboro estrechamente con el equipo de diseño para garantizar una interfaz de usuario intuitiva y atractiva para mejorar la experiencia del usuario final.</li>
-           </ul>
-        </div>
-        <div class="experiencia-laboral">
-            <h3 class="experiencia-empresa" >Empresa: Almeria S.C.A.</h3><br>
-            <h4>Período: 19/12/2001 al 26-02-2002 (2 meses)</h4>
-            <h4>Contrato: Prácticas de formación</h4>
-        </div>
-        <div class="experiencia-texto">
-            <ul>
-              <li>Apoyo para la finalización de un doctorado del personal de la empresa.</li>
-              <li>Visita a pie de campo de explotaciones de cultivo bajo plástico.</li>
-              <li>Toma de datos de los parámetros del agua de riego de las distintas explotaciones.</li>
-              <li>Tratamiento estadístico de datos.</li>
-              <li>Entrega de información al responsable del doctorado.</li>
-           </ul>
-        </div>
-        <div class="experiencia-laboral">
-            <h3 class="experiencia-empresa" >Empresa: Caja Rural de Almería: Estación experimiental las palmerillas.</h3><br>
-            <h4>Período: 09/12/1999 al 08-10-2000 (10 meses)</h4>
-            <h4>Contrato: Beca de investigación</h4>
-        </div>
-        <div class="experiencia-texto">
-            <ul>
-              <li>Análisis de parámetros bioproductivos y de calidad de ocho cultivares de tomate "en ramillete" <i>(Lycopersicom esculentum Mill).</i></li>
-              <li>Control de producción (peso total y comercial del ramillete, número de frutos por ramillete).</li>
-              <li>Control de calidad del ramillete (uniformidad de los frutos, homogeneidad de coloración, distribución espacial de los frutos y tipo de ramillete).</li>
-              <li>Control de calidad de la producción (calibre, pH, ºBrix, acidez, firmeza, intensidad de color, conservación del fruto a temperatura y humedad ambiente, catface, blotchy, etc.).</li>
-              <li>Tratamiento estadístico de datos.</li>
-            </ul>
-        </div>
-    </div>
-    <div class="pie">&copy; JGM</div> 
-</div>
+    <div class="pie">&copy; JGM</div>
 </body>
+
 </html>
