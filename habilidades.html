@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,111 +8,115 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth@75..100&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0e770521bf.js" crossorigin="anonymous"></script>   <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0e770521bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-<div class="menu">
-    <label class="logo">CURRICULUM</label>
-    <nav class="menu-items" id="navitems" >
-        <li class="active"><a href="index.html">Perfil</a></li>
-        <li><a href="cursos.html">Cursos</a></li>
-        <li><a href="habilidades.html">Habilidades</a></li>
-    </nav>
-    <div class="menu-btn">
-        <span class="menu-burger" id="burgerbtn">
-          <i class="fa-solid fa-bars"></i>
-        </span>
-        <span class="menu-cerrar" id="cerrarbtn">
-          <i class="fa-solid fa-x"></i>
-        </span>
+    <div class="menu">
+        <label class="logo">CURRICULUM</label>
+        <nav class="menu-items" id="navitems">
+            <li class="active"><a href="index.html">Perfil</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+        </nav>
+        <div class="menu-btn">
+            <button class="menu-burger" id="burgerbtn" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="menu-cerrar" id="cerrarbtn" aria-label="Cerrar">
+                <i class="fa-solid fa-x"></i>
+            </button>
+        </div>
     </div>
-</div>
-<div class="contenedor" >
-    <h2>Habilidades</h2>
-    <div class="habilidades">
-        <div id="habilidades-texto">
-            <ul>
-                <li>Conocimiento técnico sólido: Dominio de varios lenguajes de programación.</li>
-                <li>Capacidad para analizar problemas complejos y desarrollar soluciones efectivas y eficientes.</li>
-                <li>Hablidades de depuración y detección de problemas técnicos y bugs.</li>
-                <li>Pensamiento algorítmico.</li>
-                <li>Comunicación clara, efectiva y trabajo en equipo.</li>
-                <li>Alta atención al detalle.</li>
-                <li>Aprendizaje continuo.</li>
-                <li>Máximo compromiso.</li>
-           </ul>
-       </div>
-       <div class="tecnología">
-            <div class="Tecnología-cuadros">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Tecnología</th>
-                            <th>Bajo</th>
-                            <th>Medio</th>
-                            <th>Alto</th>
-                            <th>Muy Alto</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img src="img/clarion_logo.png" alt="Clarion" class="tech-img"></td>
-                            <td><i class="fa-regular fa-circle-check" id="check"></i></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                        </tr>
-                        <tr>
-                            <td><img src="img/sqlserver_logo.svg" alt="SQL Server" class="tech-img"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
-                        </tr>
-                        <tr>
-                            <td><img src="img/HTML5_logo.svg" alt="HTML" class="tech-img"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
-                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
-                        </tr>
-                        <tr>
-                            <td><img src="img/CSS3_logo.svg" alt="CSS" class="tech-img"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
-                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
-                        </tr>
-                        <tr>
-                            <td><img src="img/net_logo.svg" alt="C#" class="tech-img"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
-                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
-                        </tr>
-                        <tr>
-                            <td><img src="img/restapi-logo.svg" alt="APIRest" class="tech-img"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
+    <div class="contenedor">
+        <h2>Habilidades</h2>
+        <div class="habilidades">
+            <div id="habilidades-texto">
+                <ul>
+                    <li>Conocimiento técnico sólido: Dominio de varios lenguajes de programación.</li>
+                    <li>Capacidad para analizar problemas complejos y desarrollar soluciones efectivas y eficientes.
+                    </li>
+                    <li>Hablidades de depuración y detección de problemas técnicos y bugs.</li>
+                    <li>Pensamiento algorítmico.</li>
+                    <li>Comunicación clara, efectiva y trabajo en equipo.</li>
+                    <li>Alta atención al detalle.</li>
+                    <li>Aprendizaje continuo.</li>
+                    <li>Máximo compromiso.</li>
+                </ul>
+            </div>
+            <div class="tecnología">
+                <div class="Tecnología-cuadros">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tecnología</th>
+                                <th>Bajo</th>
+                                <th>Medio</th>
+                                <th>Alto</th>
+                                <th>Muy Alto</th>
                             </tr>
-                        <tr>
-                            <td><img src="img/Git_logo.svg" alt="GIT" class="tech-img"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle-check"id="check"></td>
-                            <td><i class="fa-regular fa-circle" id="uncheck"></td>
-                             <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="img/clarion_logo.png" alt="Clarion" class="tech-img"></td>
+                                <td><i class="fa-regular fa-circle-check check-icon"></i></td>
+                                <td><i class="fa-regular fa-circle-check check-icon"></i></td>
+                                <td><i class="fa-regular fa-circle-check check-icon"></i></td>
+                                <td><i class="fa-regular fa-circle-check check-icon"></i></td>
                             </tr>
-                    </tbody>
-                </table>
-    
+                            <tr>
+                                <td><img src="img/sqlserver_logo.svg" alt="SQL Server" class="tech-img"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/HTML5_logo.svg" alt="HTML" class="tech-img"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                                <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/CSS3_logo.svg" alt="CSS" class="tech-img"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                                <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/net_logo.svg" alt="C#" class="tech-img"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                                <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/restapi-logo.svg" alt="APIRest" class="tech-img"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                            </tr>
+                            <tr>
+                                <td><img src="img/Git_logo.svg" alt="GIT" class="tech-img"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle-check" id="check"></td>
+                                <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                                <td><i class="fa-regular fa-circle" id="uncheck"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
             </div>
         </div>
-   </div>
-</div> 
-<div class="pie">(c) JGM </div> 
-</div>
+    </div>
+    <div class="pie">&copy; JGM </div>
+    </div>
 </body>
+
 </html>
