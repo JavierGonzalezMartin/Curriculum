@@ -12,6 +12,7 @@ addEventListener('DOMContentLoaded', () => {
     if (cerrar && menu_items) {
         cerrar.addEventListener('click', () => {
             menu_items.classList.remove('showmenu');
+            window.close();
         });
     }
 
