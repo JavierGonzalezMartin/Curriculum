@@ -19,7 +19,7 @@ addEventListener('DOMContentLoaded', () => {
     if (tab_cerrar) {
         tab_cerrar.addEventListener('click', (e) => {
             e.preventDefault();
-            window.close();
+            window.history.back();
         });
     }
 
