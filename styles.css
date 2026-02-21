@@ -166,10 +166,9 @@ h4 {
 #perfil-email {
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 15px;
   gap: 12px;
-  white-space: nowrap;
 }
 
 #perfil-email p {
