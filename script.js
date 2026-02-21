@@ -19,7 +19,7 @@ addEventListener('DOMContentLoaded', () => {
     if (tab_cerrar) {
         tab_cerrar.addEventListener('click', (e) => {
             e.preventDefault();
-            window.history.back();
+            window.location.href = "https://google.com";
         });
     }
 
