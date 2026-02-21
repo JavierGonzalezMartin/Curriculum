@@ -24,12 +24,23 @@
         </header>
         <main class="pdf-content">
             <div class="pdf-protection-overlay"></div>
-            <embed src="../pdfs/vacio.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
+            <iframe src="../pdfs/vacio.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf"></iframe>
         </main>
     </div>
     <script>
-        // Desactivar clic derecho en el protector del PDF
-        document.querySelector('.pdf-protection-overlay').addEventListener('contextmenu', (e) => e.preventDefault());
+        const protection = document.querySelector('.pdf-protection-overlay');
+
+        // Desactivar clic derecho
+        protection.addEventListener('contextmenu', (e) => e.preventDefault());
+
+        // Desactivar toques largos en móviles (que suelen sacar el menú de descargar/guardar)
+        protection.addEventListener('touchstart', (e) => {
+            if (e.touches.length > 1) e.preventDefault();
+        }, { passive: false });
+
+        protection.addEventListener('touchend', (e) => {
+            // Evitar gestos de sistema si es posible
+        }, { passive: false });
     </script>
 </body>
 
