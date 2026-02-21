@@ -23,9 +23,14 @@
             </a>
         </header>
         <main class="pdf-content">
-            <embed src="../pdfs/vacio.pdf" type="application/pdf">
+            <div class="pdf-protection-overlay"></div>
+            <embed src="../pdfs/vacio.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf">
         </main>
     </div>
+    <script>
+        // Desactivar clic derecho en el protector del PDF
+        document.querySelector('.pdf-protection-overlay').addEventListener('contextmenu', (e) => e.preventDefault());
+    </script>
 </body>
 
 </html>
